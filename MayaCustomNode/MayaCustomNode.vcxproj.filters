@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="Images\CustomNode.gif">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="Images\CustomNodeBG.gif">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="Images\spacer.gif">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="Scripts\1033\default.js">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="..\MayaWizCommon\mayaCommon.js">
+      <Filter>Other</Filter>
+    </None>
+    <None Include="HTML\1033\default.htm">
+      <Filter>HTML</Filter>
+    </None>
+    <None Include="HTML\1033\objects.xml">
+      <Filter>HTML</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="HTML">
+      <UniqueIdentifier>{5fbf1ec6-b036-4a79-b8e7-a04c0cc3e393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{9704bb8e-8ea9-492e-b2b6-7b4405f75e0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{a5691f36-e6e1-4673-8bb2-03a6278d97f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Templates">
+      <UniqueIdentifier>{2f2b2294-ada0-4516-bc54-fcf382ddf503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Images">
+      <UniqueIdentifier>{c6f489bc-22e6-40f5-a66d-d8dc02cd1a36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Templates\1033\object.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Templates\1033\object.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

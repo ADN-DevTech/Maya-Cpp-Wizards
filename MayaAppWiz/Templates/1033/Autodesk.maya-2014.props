@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!-- http://msdn.microsoft.com/en-us/library/ms171458.aspx -->
+	<PropertyGroup>
+		<_ProjectFileVersion>14.0.0.1</_ProjectFileVersion>
+		<_PropertySheetDisplayName>Maya 2014</_PropertySheetDisplayName>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<MayaDir Condition="'$(Platform)'=='x64'">C:\Program Files\Autodesk\Maya2014</MayaDir>
+		<MayaDir Condition="'$(Platform)'=='Win32'">C:\Program Files (x86)\Autodesk\Maya2014</MayaDir>
+		<MRDir Condition="'$(Platform)'=='x64'">C:\Program Files\Autodesk\mentalrayForMaya2014</MRDir>
+		<MRDir Condition="'$(Platform)'=='Win32'">C:\Program Files (x86)\Autodesk\mentalrayForMaya2014</MRDir>
+		<MayaDevkitDir>$(MayaDir)\devkit</MayaDevkitDir>
+
+		<MayaIncs>$(MayaDir)\include</MayaIncs>
+		<MayaMRIncs>$(MRDir)\devkit\include</MayaMRIncs>
+
+		<MayaLibs>$(MayaDir)\lib</MayaLibs>
+		<MayaMRLibs>$(MRDir)\devkit\lib\nt</MayaMRLibs>
+	</PropertyGroup>
+
+	<ImportGroup Label="PropertySheets">
+		<Import Condition="exists('$(MayaAppType).props')" Project="$(MayaAppType).props" />
+		<Import Condition="exists('$(Configuration).props')" Project="$(Configuration).props" />
+	</ImportGroup>
+	
+	<PropertyGroup>
+		<!-- ExecutablePath>$(ExecutablePath)</ExecutablePath -->
+		<IncludePath>$(MayaIncs);$(MayaMRIncs);$(IncludePath)</IncludePath>
+		<ReferencePath>$(MayaIncs);$(ReferencePath)</ReferencePath>
+		<LibraryPath>$(MayaLibs);$(MayaMRLibs);$(LibraryPath)</LibraryPath>
+		<!-- SourcePath>$(SourcePath)</SourcePath -->
+		<!-- ExcludePath>$(ExcludePath)</ExcludePath -->
+	</PropertyGroup>
+	
+	<ItemDefinitionGroup>
+		<Link>
+			<ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+		</Link>
+	</ItemDefinitionGroup>
+	
+</Project>

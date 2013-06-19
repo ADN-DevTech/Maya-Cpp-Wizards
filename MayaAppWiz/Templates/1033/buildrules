@@ -1,0 +1,27 @@
+#-
+# Copyright 2012 Autodesk, Inc.  All rights reserved.
+# 
+# Use of this software is subject to the terms of the Autodesk license
+# agreement provided at the time of installation or download, or which
+# otherwise accompanies this software in either electronic or hard copy form.
+#+
+
+INCL_BUILDRULES := 1
+
+include $(TOP)/buildconfig
+
+# Generic Rules
+.PHONY    : all plugins depend clean Clean
+.DEFAULT  : all
+
+all : plugins
+
+# Generic Rules
+$(DSTDIR)/%.o :	$(SRCDIR)/%.c
+	$(CC) -c $(INCLUDES) $(CFLAGS) $< -o $@
+
+$(DSTDIR)/%.o :	$(SRCDIR)/%.cpp
+	$(C++) -c $(INCLUDES) $(C++FLAGS) $< -o $@
+
+$(DSTDIR)/%.i :	$(SRCDIR)/%.cpp
+	$(C++) -E $(INCLUDES) $(C++FLAGS) $(SRCDIR)/$*.cpp > $(DSTDIR)/$*.i

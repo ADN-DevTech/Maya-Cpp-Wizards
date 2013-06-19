@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MayaAppWiz", "MayaAppWiz\MayaAppWiz.vcxproj", "{C7240EF9-D788-44D0-92AA-1DCF7820EAAC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MayaCommand", "MayaCommand\MayaCommand.vcxproj", "{2228A83A-B192-4554-91E1-61A8E8E9BC58}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MayaCustomNode", "MayaCustomNode\MayaCustomNode.vcxproj", "{0164AD2C-0D26-4389-B75F-3C8E26DA9B14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7240EF9-D788-44D0-92AA-1DCF7820EAAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C7240EF9-D788-44D0-92AA-1DCF7820EAAC}.Release|Win32.ActiveCfg = Release|Win32
+		{2228A83A-B192-4554-91E1-61A8E8E9BC58}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2228A83A-B192-4554-91E1-61A8E8E9BC58}.Release|Win32.ActiveCfg = Release|Win32
+		{0164AD2C-0D26-4389-B75F-3C8E26DA9B14}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0164AD2C-0D26-4389-B75F-3C8E26DA9B14}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

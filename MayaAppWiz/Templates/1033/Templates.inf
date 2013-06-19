@@ -1,0 +1,14 @@
+StdAfx.h
+StdAfx.cpp
+mayaHeaders.h
+
+[!if APP_PLUGIN_TYPE]
+OpenFile | plugin.cpp
+[!else]
+OpenFile | standalone.cpp
+[!endif]
+
+Root.rc
+Resource.h
+
+OpenFile | ReadMe.txt

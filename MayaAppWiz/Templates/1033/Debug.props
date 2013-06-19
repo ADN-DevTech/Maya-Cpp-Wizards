@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!-- http://msdn.microsoft.com/en-us/library/ms171458.aspx -->
+	<PropertyGroup>
+		<_ProjectFileVersion>13.0.0.1</_ProjectFileVersion>
+		<_PropertySheetDisplayName>Maya 2014 Debug</_PropertySheetDisplayName>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+	</PropertyGroup>
+
+	<ImportGroup Label="PropertySheets">
+	</ImportGroup>
+	
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+		</Link>
+	</ItemDefinitionGroup>
+	
+</Project>

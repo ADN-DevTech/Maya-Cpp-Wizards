@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<objects>
+	<!--	name         =Class Name -->
+	<!--	header       =Include Header -->
+	<!--	templatefile =Template Filename -->
+	<!--	flag         =Flags (C=Createable By TypeID, A=Automation, N=None, X=Cannot derive from) -->
+	<!--	protocol     =Protocols Supported (1:MPxNode, 2:?, 3:?) -->
+
+	<object name="MPxCommand" header="" templatefile="command" flag="A" protocol="1" />
+
+</objects>

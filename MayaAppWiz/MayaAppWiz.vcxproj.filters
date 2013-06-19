@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Templates\1033\plugin.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\1033\standalone.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates\1033\StdAfx.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Templates\1033\mayaHeaders.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\1033\Resource.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates\1033\StdAfx.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HTML\1033\AppType.htm">
+      <Filter>HTML</Filter>
+    </None>
+    <None Include="Scripts\1033\default.js">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Images\MayaAppWiz.gif">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="HTML\1033\default.htm">
+      <Filter>HTML</Filter>
+    </None>
+    <None Include="..\MayaWizCommon\mayaCommon.js">
+      <Filter>Other</Filter>
+    </None>
+    <None Include="Images\MayaAppWiz_Background.gif">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="Images\spacer.gif">
+      <Filter>Images</Filter>
+    </None>
+    <None Include="Templates\1033\Templates.inf">
+      <Filter>Templates</Filter>
+    </None>
+    <None Include="1033\styles.css">
+      <Filter>Styles</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="HTML">
+      <UniqueIdentifier>{ae1e3791-d275-4912-aa49-8617f2252cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{61bda3aa-7fae-4324-a0ff-43382e39f000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Templates">
+      <UniqueIdentifier>{9e34ad89-d946-45a2-806a-e73b42031abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Images">
+      <UniqueIdentifier>{baf83b85-a657-4f19-84d2-18fe27b12829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{250aa1ae-1bb7-4b68-96de-375abb7b225c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Styles">
+      <UniqueIdentifier>{b230a9f5-864d-4dd3-bddd-aa3b9226665f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Templates\1033\Root.rc">
+      <Filter>Templates</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

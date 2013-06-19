@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!-- http://msdn.microsoft.com/en-us/library/ms171458.aspx -->
+	<PropertyGroup>
+		<_ProjectFileVersion>13.0.0.1</_ProjectFileVersion>
+		<_PropertySheetDisplayName>Maya 2014 Plug-in</_PropertySheetDisplayName>
+		<TargetExt>.mll</TargetExt>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+	</PropertyGroup>
+
+	<ImportGroup Label="PropertySheets">
+	</ImportGroup>
+	
+	<PropertyGroup>
+		<!-- Local Windows debugger -->
+		<LocalDebuggerDebuggerType>Auto</LocalDebuggerDebuggerType>
+		<!-- LocalDebuggerCommand is defined into an empty $(TargetPath) for the property page, it is later redefined to its proper value. -->
+		<LocalDebuggerCommand Condition="'$(MayaDir)' != ''">$(MayaDir)\bin\maya.exe</LocalDebuggerCommand>
+		<LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory>
+		<!-- LocalDebuggerMergeEnvironment>true</LocalDebuggerMergeEnvironment -->
+		<!-- LocalDebuggerAttach>False</LocalDebuggerAttach -->
+		<!-- LocalDebuggerSQLDebugging>False</LocalDebuggerSQLDebugging -->
+	</PropertyGroup>
+	
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>DynamicLibrary</ConfigurationType>
+	</PropertyGroup>
+	
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<PreprocessorDefinitions>NT_PLUGIN;REQUIRE_IOSTREAM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
+	</ItemDefinitionGroup>
+	
+</Project>

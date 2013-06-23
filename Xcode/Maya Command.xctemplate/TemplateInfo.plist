@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.c-plus-plus-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>Description</key>
+	<string>A new Maya command class implementation.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.cpp</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>MyCommand</string>
+			<key>Description</key>
+			<string>The command name to create</string>
+			<key>Identifier</key>
+			<string>commandName</string>
+			<key>Name</key>
+			<string>Command Name</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>MyCommandClass</string>
+			<key>Description</key>
+			<string>The class name to create</string>
+			<key>Identifier</key>
+			<string>className</string>
+			<key>Name</key>
+			<string>Class Name</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>MPxCommand</string>
+			<key>Description</key>
+			<string>The base class to derive from</string>
+			<key>Identifier</key>
+			<string>baseClass</string>
+			<key>Name</key>
+			<string>Base Class</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>combo</string>
+			<key>Values</key>
+			<array>
+				<string>MPxCommand</string>
+			</array>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.macosx</string>
+	</array>
+	<key>Summary</key>
+	<string>A Maya command class implementation.</string>
+</dict>
+</plist>

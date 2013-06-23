@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.c-plus-plus-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>Description</key>
+	<string>A new Maya node class implementation.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.cpp</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>MyNode</string>
+			<key>Description</key>
+			<string>The node name to create</string>
+			<key>Identifier</key>
+			<string>nodeName</string>
+			<key>Name</key>
+			<string>Node Name</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>0x00000001</string>
+			<key>Description</key>
+			<string>The node ID to create</string>
+			<key>Identifier</key>
+			<string>nodeID</string>
+			<key>Name</key>
+			<string>Node ID</string>
+			<key>Required</key>
+			<false/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>MyNodeClass</string>
+			<key>Description</key>
+			<string>The node class name to create</string>
+			<key>Identifier</key>
+			<string>className</string>
+			<key>Name</key>
+			<string>Class Name</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>MPxNode</string>
+			<key>Description</key>
+			<string>The base class to derive from</string>
+			<key>Identifier</key>
+			<string>baseClass</string>
+			<key>Name</key>
+			<string>Base Class</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.macosx</string>
+	</array>
+	<key>Summary</key>
+	<string>A Maya node class implementation.</string>
+</dict>
+</plist>

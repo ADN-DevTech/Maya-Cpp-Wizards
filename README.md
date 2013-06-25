@@ -1,9 +1,12 @@
 Maya C++ Wizards
 ================
 
-A Maya C++ Wizards for Wizards for Visual Studio and Xcode
+A Maya C++ Wizards for Wizards for Visual Studio and Xcode  
 optimized and using pre-compiled headers
 
+Written by Cyrille Fauvel (Autodesk Developer Network)  
+[http://www.autodesk.com/adn](http://www.autodesk.com/adn)  
+[http://around-the-corner.typepad.com/](http://around-the-corner.typepad.com/)
 
 1) Xcode Install
 ----------------

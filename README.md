@@ -1,9 +1,12 @@
 Maya C++ Wizards
 ================
 
-A Maya C++ Wizards for Wizards for Visual Studio and Xcode
+A Maya C++ Wizards for Wizards for Visual Studio and Xcode  
 optimized and using pre-compiled headers
 
+Written by Cyrille Fauvel (Autodesk Developer Network)  
+[http://www.autodesk.com/adn](http://www.autodesk.com/adn)  
+[http://around-the-corner.typepad.com/](http://around-the-corner.typepad.com/)
 
 1) Xcode Install
 ----------------
@@ -23,6 +26,9 @@ a pkg installer project will be coming soon
    - [WIZVERSION] into 10.0 or 11.0 depending of the Visual Version you installed it into
    - [TARGETDIR] to the directory where you copied the wizards files
 
-a wix/msi installer project will be coming soon
+There is a wix/msi installer project included in case you want to get it installed for you. The installer will work for Maya 2014, Visual Studio 2010/12 Pro/Standard and Express editions. If you do not have Maya 2014 installed, you can either:
+- remove the Maya 2014 check in property.wxi line #20,21
+- or change the chack for Maya 2013 or older in property.wxi line #20,21
+- or add a key in the registry at HKLM\Software\Autodesk\Maya\2014\Setup\InstallPath - MAYA_INSTALL_LOCATION
 
 <b>Note:</b> Maya 2014 requires using the VC 10.0 Service Pack 1 runtime, if using Visual Studio 2012, do not forget to change the 'Platform Toolkit' to vc100

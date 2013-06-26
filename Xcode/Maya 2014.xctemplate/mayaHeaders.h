@@ -25,7 +25,7 @@
 #endif
 
 //-----------------------------------------------------------------------------
-#ifdef NT_PLUGIN
+#ifdef defined(NT_PLUGIN) && !defined(_MANAGED)
 #define EXPORT comment(linker, "/EXPORT:"__FUNCTION__"="__FUNCDNAME__)
 #else
 #define EXPORT 

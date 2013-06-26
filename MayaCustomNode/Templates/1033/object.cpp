@@ -59,7 +59,7 @@ MStatus [!output CLASS_NAME]::initialize () {
 	//- then be recomputed the next time the value of the output is requested.
 	MayaOk (attributeAffects (attr1, attr2), _T("attributeAffects")) ;
 
-	return (MS::kSuccess) ;
+	return (MStatus::kSuccess) ;
 }
 
 MStatus [!output CLASS_NAME]::registerMe (MFnPlugin &plugin) {
@@ -79,14 +79,14 @@ MStatus [!output CLASS_NAME]::compute (const MPlug &plug, MDataBlock &data) {
  
 	//- Check which output attribute we have been asked to compute. If this 
 	//- node doesn't know how to compute it, we must return MS::kUnknownParameter
-	MStatus returnStatus =MS::kUnknownParameter ;
+	MStatus returnStatus =MStatus::kUnknownParameter ;
 	if ( plug == attr2 ) {
 		//- Get a handle to the input attribute that we will need for the
 		//- computation. If the value is being supplied via a connection 
 		//- in the dependency graph, then this call will cause all upstream  
 		//- connections to be evaluated so that the correct value is supplied.
 		MDataHandle attr1Data =data.inputValue (attr1, &returnStatus) ;
-		if ( returnStatus == MS::kSuccess ) {
+		if ( returnStatus == MStatus::kSuccess ) {
 			//- Read the input value from the handle.
 			float result =attr1Data.asFloat () ;
 			//- Get a handle to the output attribute. This is similar to the

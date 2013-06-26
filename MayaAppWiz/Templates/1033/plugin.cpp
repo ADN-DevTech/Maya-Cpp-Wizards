@@ -27,7 +27,7 @@ MStatus initializePlugin (MObject obj) {
 	//-{{MAYA_REGISTER
 	//-MAYA_REGISTER}}
 
-	return (MS::kSuccess) ;
+	return (MStatus::kSuccess) ;
 }
 
 MStatus uninitializePlugin (MObject obj) {
@@ -44,5 +44,5 @@ MStatus uninitializePlugin (MObject obj) {
 	//-{{MAYA_UNREGISTER
 	//-MAYA_UNREGISTER}}
 
-	return (MS::kSuccess) ;
+	return (MStatus::kSuccess) ;
 }

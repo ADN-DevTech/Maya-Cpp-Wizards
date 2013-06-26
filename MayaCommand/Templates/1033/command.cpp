@@ -50,7 +50,7 @@ MStatus [!output CLASS_NAME]::redoIt () {
 	//- Since this class is derived off of MPxCommand, you can use the 
 	//- inherited methods to return values and set error messages
 	setResult (_T("[!output CMD_NAME] command executed!\n")) ;
-	return (MS::kSuccess) ;
+	return (MStatus::kSuccess) ;
 }
 
 MStatus [!output CLASS_NAME]::undoIt () {
@@ -64,5 +64,5 @@ MStatus [!output CLASS_NAME]::undoIt () {
 	//-                     likely cause the undo queue to be purged
 	//- You can also display information to the command window via MGlobal
     MGlobal::displayInfo (_T("[!output CMD_NAME] command undone!\n")) ;
-	return (MS::kSuccess) ;
+	return (MStatus::kSuccess) ;
 }

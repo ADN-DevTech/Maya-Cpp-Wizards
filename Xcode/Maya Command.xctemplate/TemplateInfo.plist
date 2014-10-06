@@ -36,7 +36,7 @@
 			<key>Description</key>
 			<string>The class name to create</string>
 			<key>Identifier</key>
-			<string>className</string>
+			<string>commandClassName</string>
 			<key>Name</key>
 			<string>Class Name</string>
 			<key>Required</key>
@@ -50,7 +50,7 @@
 			<key>Description</key>
 			<string>The base class to derive from</string>
 			<key>Identifier</key>
-			<string>baseClass</string>
+			<string>commandBaseClass</string>
 			<key>Name</key>
 			<string>Base Class</string>
 			<key>Required</key>

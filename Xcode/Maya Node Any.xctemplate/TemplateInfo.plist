@@ -40,7 +40,7 @@
 			<key>Name</key>
 			<string>Node ID</string>
 			<key>Required</key>
-			<true/>
+			<false/>
 			<key>Type</key>
 			<string>text</string>
 		</dict>
@@ -50,7 +50,7 @@
 			<key>Description</key>
 			<string>The node class name to create</string>
 			<key>Identifier</key>
-			<string>nodeClassName</string>
+			<string>className</string>
 			<key>Name</key>
 			<string>Class Name</string>
 			<key>Required</key>
@@ -59,22 +59,18 @@
 			<string>text</string>
 		</dict>
 		<dict>
-			<key>Values</key>
-			<array>
-				<string>MPxNode</string>
-			</array>
 			<key>Default</key>
 			<string>MPxNode</string>
 			<key>Description</key>
 			<string>The base class to derive from</string>
 			<key>Identifier</key>
-			<string>nodeBaseClass</string>
+			<string>baseClass</string>
 			<key>Name</key>
 			<string>Base Class</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
-			<string>combo</string>
+			<string>text</string>
 		</dict>
 	</array>
 	<key>Platforms</key>

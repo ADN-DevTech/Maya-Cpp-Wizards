@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+MYHOME="`dirname \"$0\"`" # Relative
+export MYHOME="`( cd \"$MYHOME\" && pwd )`" # Absolutized and normalized
+cd $MYHOME
+
+export MAYA_LOCATION=/Applications/Autodesk/maya2014
+

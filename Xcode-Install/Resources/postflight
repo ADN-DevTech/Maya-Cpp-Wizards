@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+INSTALLDIR=/Users/Shared/Autodesk/ApplicationPlugins/{{AppName}}
+# Escape path for sed using bash find and replace 
+INSTALLDIR="${INSTALLDIR//\//\\/}"
+
+cd ~/Library/Preferences/Autodesk/maya/{{VERSION}}-x64
+if [ ! -d "modules" ]; then
+	mkdir modules
+	chowm -r $LOGNAME:staff modules
+fi
+cd modules
+
+shopt -s nullglob
+for f in $INSTALLDIR/Contents/*.mod; do
+	#cp -f $f .
+	sed "s/\[INSTALLDIR\]/${INSTALLDIR}/g" $f > $(basename $f) 
+done
+
+exit 0

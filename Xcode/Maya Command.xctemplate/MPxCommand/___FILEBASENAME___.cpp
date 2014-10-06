@@ -14,16 +14,16 @@
 #include "___FILEBASENAME___.h"
 
 //-----------------------------------------------------------------------------
-MStatus ___VARIABLE_className:identifier___::registerMe (MFnPlugin &plugin) {
-	return (plugin.registerCommand (_T("___VARIABLE_commandName___"), ___VARIABLE_className:identifier___::creator)) ;
+MStatus ___VARIABLE_commandClassName:identifier___::registerMe (MFnPlugin &plugin) {
+	return (plugin.registerCommand (_T("___VARIABLE_commandName___"), ___VARIABLE_commandClassName:identifier___::creator)) ;
 }
 
-MStatus ___VARIABLE_className:identifier___::unregisterMe (MFnPlugin &plugin) {
+MStatus ___VARIABLE_commandClassName:identifier___::unregisterMe (MFnPlugin &plugin) {
 	return (plugin.deregisterCommand (_T("___VARIABLE_commandName___"))) ;
 }
 
 //-----------------------------------------------------------------------------
-MStatus ___VARIABLE_className:identifier___::doIt (const MArgList &args) {
+MStatus ___VARIABLE_commandClassName:identifier___::doIt (const MArgList &args) {
 	//- implements the MEL ___VARIABLE_commandName___ command.
 	//-		args - the argument list that was passes to the command from MEL
 	//- Return Value:
@@ -38,7 +38,7 @@ MStatus ___VARIABLE_className:identifier___::doIt (const MArgList &args) {
 	return (redoIt ()) ;
 }
 
-MStatus ___VARIABLE_className:identifier___::redoIt () {
+MStatus ___VARIABLE_commandClassName:identifier___::redoIt () {
 	//- Implements redo for the MEL ___VARIABLE_commandName___ command. 
 	//- This method is called when the user has undone a command of this type
 	//- and then redoes it. No arguments are passed in as all of the necessary
@@ -53,7 +53,7 @@ MStatus ___VARIABLE_className:identifier___::redoIt () {
 	return (MS::kSuccess) ;
 }
 
-MStatus ___VARIABLE_className:identifier___::undoIt () {
+MStatus ___VARIABLE_commandClassName:identifier___::undoIt () {
 	//- Implements undo for the MEL ___VARIABLE_commandName___ command.  
 	//- This method is called to undo a previous command of this type.  The 
 	//- system should be returned to the exact state that it was it previous 

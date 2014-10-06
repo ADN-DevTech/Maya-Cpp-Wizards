@@ -10,12 +10,45 @@ Written by Cyrille Fauvel (Autodesk Developer Network)
 
 1) Xcode Install
 ----------------
-- copy 'Xcode/Maya 2014.xctemplate' in '/Applications/Xcode-4.3.3/Contents/Developer/Library/Xcode/Templates/Project Templates/Mac/Autodesk'
-- copy 'Maya Command.xctemplate' and 'Maya Node.xctemplate' in /Applications/Xcode-4.3.3/Contents/Developer/Library/Xcode/Templates/File Templates/Maya'
+
+There is 2 way to install the Wizards for Xcode. You can either modify Xcode.app directly (requires super-user rights), or modify per-user Templates.
+
+
+Modifying Xcode.app
+
+
+Maya 2014 (see [requirements](http://around-the-corner.typepad.com/adn/2013/06/maya-compiler-versions-update.html))
+In the following instructions Xcode was renamed Xcode-4.3.3 to match the Maya required compiler version. On your system, it is by default just Xcode.app.
+- copy 'Xcode/Maya 2014.xctemplate' in '/Applications/Xcode-4.3.3.app/Contents/Developer/Library/Xcode/Templates/Project Templates/Mac/Autodesk'
+- copy 'Maya Command.xctemplate' and 'Maya Node.xctemplate' in '/Applications/Xcode-4.3.3.app/Contents/Developer/Library/Xcode/Templates/File Templates/Maya'
+
+Maya 2015 (see [requirements](http://around-the-corner.typepad.com/adn/2014/04/maya-compiler-versions-update.html))
+In the following instructions Xcode was renamed Xcode-5.0.2 to match the Maya required compiler version. On your system, it is by default just Xcode.app.
+- copy 'Xcode/Maya 2015.xctemplate' in '/Applications/Xcode-5.0.2.app/Contents/Developer/Library/Xcode/Templates/Project Templates/Mac/Autodesk'
+- copy 'Maya Command.xctemplate' and 'Maya Node.xctemplate' in '/Applications/Xcode-5.0.2.app/Contents/Developer/Library/Xcode/Templates/File Templates/Maya'
+
+
+Per-user Templates
+
+Go to '~/Library/Developer/Xcode' and create, if they do not exist yet, the following 2 folders:
+- Project Templates
+- File Templates
+
+,
+Maya 2014 (see [requirements](http://around-the-corner.typepad.com/adn/2013/06/maya-compiler-versions-update.html))
+In the following instructions Xcode was renamed Xcode-4.3.3 to match the Maya required compiler version. On your system, it is by default just Xcode.app.
+- copy 'Xcode/Maya 2014.xctemplate' in '~/Library/Developer/Xcode/Templates/Project Templates/Mac/Autodesk'
+- copy 'Maya Command.xctemplate' and 'Maya Node.xctemplate' in ‘~/Library/Developer/Xcode/Templates/File Templates/Maya'
+
+Maya 2015 (see [requirements](http://around-the-corner.typepad.com/adn/2014/04/maya-compiler-versions-update.html))
+In the following instructions Xcode was renamed Xcode-5.0.2 to match the Maya required compiler version. On your system, it is by default just Xcode.app.
+- copy 'Xcode/Maya 2015.xctemplate' in '~/Library/Developer/Xcode/Templates/Project Templates/Mac/Autodesk'
+- copy 'Maya Command.xctemplate' and 'Maya Node.xctemplate' in '~/Library/Developer/Xcode/Templates/File Templates/Maya'
+
 
 a pkg installer project will be coming soon
 
-<b>Note:</b> Maya 2014 requires using the Mac 10.6 SDK (Snow Leopard). Xcode-4.3.3 is the latest compatible version which can use the 10.6 SDK. If using an older verion and/or if you migrated to Mountain Lion, you will need to change the project settings to use the 10.7 SDK (Lion) to be able to compile.
+<b>Note:</b> Maya 2014 requires using the Mac 10.6 SDK (Snow Leopard). Xcode-4.3.3 is the latest compatible version which can use the 10.6 SDK. If using an older version and/or if you migrated to Mountain Lion, you will need to change the project settings to use the 10.7 SDK (Lion) to be able to compile.
 
 
 2) Visual Studio Install

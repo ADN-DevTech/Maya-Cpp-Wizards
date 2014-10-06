@@ -32,3 +32,16 @@ There is a wix/msi installer project included in case you want to get it install
 - or add a key in the registry at HKLM\Software\Autodesk\Maya\2014\Setup\InstallPath - MAYA_INSTALL_LOCATION
 
 <b>Note:</b> Maya 2014 requires using the VC 10.0 Service Pack 1 runtime, if using Visual Studio 2012, do not forget to change the 'Platform Toolkit' to vc100
+
+--------
+
+## License
+
+This sample is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
+
+
+## Written by
+
+Cyrille Fauvel (Autodesk Developer Network)  
+http://www.autodesk.com/adn  
+http://around-the-corner.typepad.com/  

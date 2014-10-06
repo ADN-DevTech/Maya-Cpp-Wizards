@@ -11,7 +11,7 @@ Written by Cyrille Fauvel (Autodesk Developer Network)
 1) Xcode Install
 ----------------
 
-There is 2 way to install the Wizards for Xcode. You can either modify Xcode.app directly (requires super-user rights), or modify per-user Templates.
+There is 2 way to install the Wizards for Xcode. You can either modify Xcode.app directly (requires super-user rights), or modify per-user Templates. You may also want to read [this article](http://around-the-corner.typepad.com/adn/2013/06/new-maya-cppython-plug-in-wizards.html) if you do not have the right OS & compiler version.
 
 
 Modifying Xcode.app
